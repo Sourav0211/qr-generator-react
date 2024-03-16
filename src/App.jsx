@@ -21,7 +21,6 @@ function App() {
       <div className="content">
       <div className="main-content">
       <Routes>
-      <Route exact path="/" element={<QRGenerator/>}/>
           <Route exact path="/link" element={<QRGenerator/>}/>
       
           <Route exact path="/file" element={<FileUploader/>}/>
