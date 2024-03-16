@@ -1,0 +1,92 @@
+.container-contact{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #eff3fb;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgb(137, 137, 137);
+}
+
+.header-3{
+    padding: 6px;
+    text-align: center;
+    background: #d4e2fd;
+    border-radius: 10px;
+    color: rgb(2, 2, 18);
+    font-size: 30px;
+    font-family: 'YourCustomFont', sans-serif; 
+    animation: fadeIn 1s ease-out;
+
+}
+
+.form-info {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+  }
+  
+  .form-div {
+    display: flex;
+    flex-direction: column; /* Change to column */
+    margin-bottom: 10px; /* Add margin between form items */
+  }
+  
+  .form-div label {
+    align-self: flex-start; /* Align labels to the left */
+    margin-bottom: 5px; /* Add margin below labels */
+  }
+  
+  .input-fields {
+    width: 100%; /* Occupy full width */
+    padding: 12px 20px;
+    border-radius: 15px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+
+  .form-btn{
+   
+   display: flex;
+   justify-content: center;
+   
+  }
+
+  /* VcardGenerator.css */
+
+.submit-button,
+.clear-button,
+.download-button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-button {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.clear-button {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.download-button {
+
+  background-color: #007bff;
+  color: #fff;
+}
+.download-button:disabled{
+    background-color: #021223;
+}
+
+.qr-code-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.qr-code {
+  max-width: 100%;
+}

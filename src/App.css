@@ -1,0 +1,36 @@
+.app-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  flex-grow: 1;
+}
+
+.main-content {
+  flex-grow: 1;
+  margin-left: 150px;
+  margin-right: 150px;
+
+ 
+  
+}
+
+.color-pickers {
+  width: 200px; /* Adjust width as needed */
+  margin-left: 0; /* Adjust spacing between main content and color pickers */
+  margin-right: 100px;
+}
+
+.pick-color-btn{
+  background-color: white;
+  color: rgb(79, 155, 237);
+  border-radius: 10px;
+  border: 0;
+}
+.pick-color-btn:hover{
+  text-decoration: underline;
+}
+
