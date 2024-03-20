@@ -16,7 +16,6 @@ Navigate to the project directory:
 
 Install dependencies:
 npm install qrcode
-npm install cors
 npm install express
 npm install multer
 
@@ -30,15 +29,11 @@ Start the server:
 
 bash
 Copy code
+go to /src
+start the server.js file
 node server.js
-The server should now be running at http://localhost:3000.
+The server should now be serving react app on th http://localhost:4000/.
 
-Start the React app:
-
-bash
-Copy code
-npm start
-The React app should open in your default web browser at http://localhost:3001.
 
 Use the app to generate QR codes:
 
