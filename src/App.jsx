@@ -14,14 +14,14 @@ function App() {
 
 
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <div className="app-container">
       <Navigation />
       </div>
       <div className="content">
       <div className="main-content">
       <Routes>
-          <Route exact path="/link" element={<QRGenerator/>}/>
+          <Route exact path="/" element={<QRGenerator/>}/>
       
           <Route exact path="/file" element={<FileUploader/>}/>
             

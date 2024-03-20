@@ -2,11 +2,11 @@ const express = require('express');
 const multer  = require('multer');
 const path = require('path');
 const fs = require('fs');
-const cors = require('cors');
+// const cors = require('cors');
 
 const app = express();
-const port = 3000; 
-app.use(cors());
+const port = 4000; 
+app.use(express.static('build'));
 
 // multer for file uploads
 const storage = multer.diskStorage({
@@ -21,14 +21,19 @@ const storage = multer.diskStorage({
 
 const upload = multer({ storage: storage });
 
+app.get('/',(req,res)=>{
+
+});
+
+
 // Endpoint for file upload
-app.post('/upload', upload.single('file'), (req, res) => {
+app.post('/api/upload', upload.single('file'), (req, res) => {
   if (!req.file) {
     return res.status(400).json({ error: 'No file uploaded' });
   }
 
   const filePath = req.file.path;
-  const downloadLink = `http://localhost:3000/download/${req.file.filename}`; // Adjusted port to 3000
+  const downloadLink = `/api/download/${req.file.filename}`; // Adjusted port to 3000
   res.json({ downloadLink });
 });
 
